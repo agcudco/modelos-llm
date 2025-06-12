@@ -24,12 +24,17 @@ x-init-ollama: &init-ollama
     -c "
       sleep 3 &&
       echo 'Pulling models...' &&
-      ollama pull nomic-embed-text &&     # Modelo de embeddings
-      ollama pull llama3 &&               # Llama 3 base
-      ollama pull phi3:medium &&          # Microsoft Phi3 (mediano)
-      ollama pull qwen2 &&                # Qwen2 (Alibaba)
-      ollama pull gemma2 &&               # Gemma 2 (Google)
-      ollama pull mistral &&              # Mistral AI
+      ollama pull nomic-embed-text &&        # Embedding de texto
+      ollama pull llama3 &&                 # Meta Llama 3 base
+      ollama pull llama3:70b &&             # Llama 3 más grande
+      ollama pull phi3:medium &&            # Microsoft Phi3 (mediano)
+      ollama pull mistral &&                # Mistral AI
+      ollama pull qwen2 &&                  # Qwen2 (Alibaba)
+      ollama pull gemma2 &&                 # Gemma 2 (Google)
+      ollama pull mixtral &&                # Mixtral 8x7B (Mistral)
+      ollama pull mxbai-embed-large &&      # Embedding alternativo
+      ollama pull openchat &&               # OpenChat
+      ollama pull starcoder2 &&             # Codificación avanzada
       echo 'All valid models pulled'
     "
 
