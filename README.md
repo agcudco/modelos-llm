@@ -1,6 +1,3 @@
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- Intro -->
 <br />
 <div align="center" style="text-align:center;">
