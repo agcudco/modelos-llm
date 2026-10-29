@@ -1,0 +1,53 @@
+# ================================
+# Variables de entorno
+# ================================
+
+# Archivos .env en cualquier carpeta
+**/.env
+**/.env.*
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+
+# Derivados y variantes comunes
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+.env.staging.local
+.env.preview
+.env.secret
+.env.secrets
+.env.vault
+.env.backup
+.env.bak
+.env.old
+.env.save
+.env.private
+
+# Por patrón (por si acaso)
+*.env
+*.env.local
+*.env.*.local
+env.local
+env.development
+env.production
+
+# Secretos y credenciales
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+secrets.yml
+secrets.yaml
+credentials.json
+
+# Docker / Compose con secretos
+docker-compose.override.yml
